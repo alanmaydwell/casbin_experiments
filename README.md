@@ -1,4 +1,4 @@
-# Exeriments in Casbin Config with Python
+# Experiments in Casbin Config with Python
 
 ## What is this?
 Experiments in using casbin configuration using model (`.conf`) and policy (`.csv`) files.
