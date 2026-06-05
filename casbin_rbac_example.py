@@ -2,7 +2,12 @@ import casbin
 
 enforcer = casbin.Enforcer("rbac_model.conf", "rbac_policy.csv")
 policy = enforcer.get_policy()
-print(f"Permitted activities:\n{policy}")
+print(f"Role definitions:\n{policy}")
+
+print("User's roles")
+for user in ("amy", "bob", "baddie", "cat", "*"):
+    print(f"{user} {enforcer.get_roles_for_user(user)}")
+
 
 attempts= [("amy", "files", "read"),
            ("amy", "files", "write"),
