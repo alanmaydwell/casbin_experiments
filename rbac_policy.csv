@@ -1,0 +1,11 @@
+p, reader, files, read
+p, writer, files, write
+p, scanner, files, scan
+p, deleter, files, delete
+p, checker, files, info
+
+g, *, checker
+g, amy, reader
+g, amy, writer
+g, bob, scanner
+g, cat, deleter
